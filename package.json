@@ -4,12 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port=3015",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "@vueuse/core": "^10.4.1",
+    "ant-design-vue": "^4.0.3",
+    "axios": "^1.4.0",
+    "chart.js": "^4.4.0",
+    "moment": "^2.29.4",
+    "pinia": "^2.1.6",
+    "vue": "^3.3.4",
+    "vue-chartjs": "^5.2.0",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
