@@ -64,11 +64,11 @@ const fetchSellingCategoryStatistics = async () => {
 
 const onSelectType = (value) => {
   selectType.value = value;
-  fetchSellingCategoryStatistics();
+  // fetchSellingCategoryStatistics();
 }
 
 onMounted(() => {
-  fetchSellingCategoryStatistics()
+  // fetchSellingCategoryStatistics()
 })
 
 </script>

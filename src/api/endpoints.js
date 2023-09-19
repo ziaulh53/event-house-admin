@@ -5,7 +5,9 @@ export const auth = {
     forgetPassword: '/admin/forget-password',
     resetPassword: '/admin/reset-password'
 }
-
+export const admins = {
+    getAdmins: '/admins',
+}
 export const user = {
     getUser: '/users/',
 }

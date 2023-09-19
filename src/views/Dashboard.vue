@@ -22,7 +22,6 @@ import { ref, onMounted } from 'vue'
 import { LineChart, PieChart } from '../components/Dashboard';
 import { Layout } from '../components/Layout';
 import { PageTitle } from '../components/ReUsable';
-import { api, dashboardEndpoint } from '../api';
 
 const data = ref({});
 const selectType = ref('day');
@@ -30,13 +29,13 @@ const sellingLoading = ref(false)
 const options = [{ value: 'day', label: "Last 7 days" }, { value: 'month', label: 'Last 6 months' }]
 
 const fetchSellingStatistics = async () => {
-    sellingLoading.value = true
-    try {
-        data.value = await api.get(dashboardEndpoint.getDashboardData, { type: selectType.value })
-    } catch (error) {
-        console.log(error)
-    }
-    sellingLoading.value = false
+    // sellingLoading.value = true
+    // try {
+    //     data.value = await api.get(dashboardEndpoint.getDashboardData, { type: selectType.value })
+    // } catch (error) {
+    //     console.log(error)
+    // }
+    // sellingLoading.value = false
 }
 
 

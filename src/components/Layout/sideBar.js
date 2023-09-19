@@ -5,6 +5,11 @@ export const sideBar = [
         iconClass: 'fa-solid fa-chart-simple'
     },
     {
+        label: 'Admins',
+        path: '/admins',
+        iconClass: 'fa-solid fa-admin'
+    },
+    {
         label: 'Customers',
         path: '/customers',
         iconClass: 'fa-solid fa-users'
