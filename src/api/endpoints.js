@@ -2,11 +2,12 @@ export const auth = {
     login: '/admin/login',
     reg: '/admin/signup',
     logout: '/admin/logout',
-    forgetPassword: '/admin/forget-password',
+    forgetPassword: '/forgot-password',
     resetPassword: '/admin/reset-password'
 }
 export const admins = {
-    getAdmins: '/admins',
+    admins: '/admins/',
+    category: '/category/'
 }
 export const user = {
     getUser: '/users/',

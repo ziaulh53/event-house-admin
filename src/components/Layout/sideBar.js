@@ -7,7 +7,7 @@ export const sideBar = [
     {
         label: 'Admins',
         path: '/admins',
-        iconClass: 'fa-solid fa-admin'
+        iconClass: 'fa-solid fa-lock'
     },
     {
         label: 'Customers',
