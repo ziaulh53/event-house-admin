@@ -2,7 +2,7 @@ export const auth = {
     login: '/admin/login',
     reg: '/admin/signup',
     logout: '/admin/logout',
-    forgetPassword: '/forgot-password',
+    forgetPassword: '/admin/forgot-password',
     resetPassword: '/admin/reset-password'
 }
 export const admins = {
