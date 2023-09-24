@@ -5,7 +5,7 @@
             <div class="bg-theme-color h-[2px]"></div>
         </div>
         <div>
-            <a-table :dataSource="allusers?.result" :columns="columns"/>
+            <a-table :dataSource="allusers?.data" :columns="columns"/>
         </div>
     </Layout>
 </template>
@@ -29,7 +29,6 @@ const columns = [
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
-        customRender: ({text,record})=>record.firstName+" "+record.lastName
     },
     {
         title: 'Email',

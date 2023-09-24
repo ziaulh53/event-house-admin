@@ -44,6 +44,7 @@ const open = ref(false);
 const adminData = ref({});
 
 const { data, refetch } = toRefs(props);
+console.log(data.value)
 
 const handleDeleteAdmin = async (id) => {
     try {

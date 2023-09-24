@@ -25,6 +25,7 @@ const loading = ref('');
 const fetchAllAdmin = async () => {
     loading.value = true;
     allAdmins.value = await api.get(admins.admins);
+    console.log(allAdmins.value)
     loading.value = false
 }
 
