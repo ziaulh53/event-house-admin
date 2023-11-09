@@ -7,7 +7,8 @@ export const auth = {
 }
 export const admins = {
     admins: '/admins/',
-    category: '/category/'
+    category: '/category/',
+    banner: '/banner'
 }
 export const user = {
     getUser: '/users/',

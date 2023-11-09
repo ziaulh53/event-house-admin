@@ -7,3 +7,4 @@ export { default as Notfound } from './Notfound.vue';
 export { default as Admins } from './Admins.vue';
 export { default as Category } from './Category.vue';
 export { default as Customers } from './Customers.vue';
+export { default as Settings } from './Settings.vue';

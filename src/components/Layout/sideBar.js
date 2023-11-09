@@ -19,4 +19,9 @@ export const sideBar = [
         path: '/category',
         iconClass: 'fa-solid fa-bars'
     },
+    {
+        label: 'Settings',
+        path: '/settings',
+        iconClass: 'fa-solid fa-bars'
+    },
 ];

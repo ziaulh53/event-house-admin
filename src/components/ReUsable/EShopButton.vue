@@ -1,5 +1,3 @@
-
-
 <template>
     <button type="primary" :onclick="onclick" :disabled="disabled || loading" :class="classes + ' btn-class'">
         <span v-if="loading"><i class="fa-solid fa-spinner fa-spin mr-2"></i> </span> <span v-if="!loading" class="mr-2"><i
