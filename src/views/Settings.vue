@@ -46,7 +46,6 @@ const onUpdate = async () => {
             images.push(file?.response?.url);
         });
         const res = await api.post(admins.banner, { banners: images });
-        console.log(res);
     } catch (error) {
         console.log(error.message)
     }
