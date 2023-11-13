@@ -24,4 +24,9 @@ export const sideBar = [
         path: '/settings',
         iconClass: 'fa-solid fa-bars'
     },
+    {
+        label: 'Subscription',
+        path: '/subscription',
+        iconClass: 'fa-solid fa-bars'
+    },
 ];
