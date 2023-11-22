@@ -87,7 +87,7 @@ const handleCreate = async () => {
     data.interval_count = 1;
     try {
         const res = await api.post(subscriptionEndpoint.create, { ...data });
-        notify(res, router.back())
+        // notify(res, router.back())
     } catch (error) {
         console.log(error.message);
     }

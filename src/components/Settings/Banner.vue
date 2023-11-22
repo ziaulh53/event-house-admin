@@ -18,7 +18,8 @@
         </div>
     </a-spin>
     <div class="mt-5 text-end">
-        <a-button type="primary" @click="onUpdate" :disabled="fileList.length === 0">Update</a-button>
+            <a-button :loading="updateLoader" type="primary" @click="onUpdate" :disabled="fileList.length === 0||updateLoader">Update</a-button>
+      
     </div>
 </template>
 
@@ -29,6 +30,7 @@ import { admins, api } from '../../api';
 const fileList = ref([]);
 const loading = ref(false);
 const uploadLoader = ref(false);
+const updateLoader = ref(false);
 
 
 // handle remove image
@@ -50,11 +52,13 @@ const fileUpload = async (e) => {
 
 // udate banner
 const onUpdate = async () => {
+    updateLoader.value=true;
     try {
         const res = await api.post(admins.banner, { banners: fileList.value });
     } catch (error) {
         console.log(error.message)
     }
+    updateLoader.value=false;
 }
 
 // fetch banners
