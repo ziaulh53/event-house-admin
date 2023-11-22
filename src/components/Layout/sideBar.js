@@ -17,16 +17,16 @@ export const sideBar = [
     {
         label: 'Category',
         path: '/category',
-        iconClass: 'fa-solid fa-bars'
+        iconClass: 'fa-brands fa-mendeley'
     },
     {
         label: 'Settings',
         path: '/settings',
-        iconClass: 'fa-solid fa-bars'
+        iconClass: 'fa-solid fa-sliders'
     },
     {
         label: 'Subscription',
         path: '/subscription',
-        iconClass: 'fa-solid fa-bars'
+        iconClass: 'fa-solid fa-box'
     },
 ];

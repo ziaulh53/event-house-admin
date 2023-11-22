@@ -18,11 +18,11 @@
             </div>
             <div class="flex justify-between items-center mb-3">
                 <p>Contact Visiblity</p>
-                <p>{{ data?.contact_hide ? "No" : "Yes" }}</p>
+                <p>{{ data?.contact_hide ? "Yes" : "No" }}</p>
             </div>
             <div class="flex justify-between items-center">
                 <p>Advertisement</p>
-                <p>{{ data?.advertise ? 'No' : "Yes" }}</p>
+                <p>{{ data?.advertise ? 'Yes' : "No" }}</p>
             </div>
         </div>
     </a-card>

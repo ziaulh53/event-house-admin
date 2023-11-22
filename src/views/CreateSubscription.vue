@@ -81,8 +81,8 @@ const handleCreate = async () => {
     const data = {
         ...state.value,
     }
-    data.contact_hide = Boolean(data.contact_hide);
-    data.advertise = Boolean(data.advertise);
+    data.contact_hide = data.contact_hide ==='true' ? true: false;
+    data.advertise = data.advertise==='true' ? true: false;
     if (data.interval === 'half') data.interval = 'month';
     data.interval_count = 1;
     try {
