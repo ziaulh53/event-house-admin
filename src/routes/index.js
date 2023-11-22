@@ -8,7 +8,10 @@ import {
   Notfound,
   Customers,
   Admins,
-  Category
+  Category,
+  Settings,
+  Subscrition,
+  CreateSubscription
 } from "../views";
 import { useAuthStore } from "../store";
 
@@ -71,9 +74,33 @@ const routes = [
     },
   },
   {
+    path: "/settings",
+    name: "settings",
+    component: Settings,
+    meta: {
+      requireAuth: true,
+    },
+  },
+  {
     path: "/customers",
     name: "customers",
     component: Customers,
+    meta: {
+      requireAuth: true,
+    },
+  },
+  {
+    path: "/subscription",
+    name: "subscription",
+    component: Subscrition,
+    meta: {
+      requireAuth: true,
+    },
+  },
+  {
+    path: "/create-subscription",
+    name: "create-subscription",
+    component: CreateSubscription,
     meta: {
       requireAuth: true,
     },

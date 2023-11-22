@@ -7,10 +7,18 @@ export const auth = {
 }
 export const admins = {
     admins: '/admins/',
-    category: '/category/'
+    category: '/category/',
+    banner: '/banner'
 }
 export const user = {
     getUser: '/users/',
+}
+
+export const subscriptionEndpoint = {
+    getSubscription: '/admin/plans',
+    create: '/admin/create-plan',
+    delete: '/admin/delete-plan/',
+    edit: '/admin/edit-plan/',
 }
 
 export const category = {
