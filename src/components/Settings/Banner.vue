@@ -18,8 +18,7 @@
         </div>
     </a-spin>
     <div class="mt-5 text-end">
-            <a-button :loading="updateLoader" type="primary" @click="onUpdate" :disabled="fileList.length === 0||updateLoader">Update</a-button>
-      
+        <a-button :loading="updateLoader" type="primary" @click="onUpdate" :disabled="fileList.length === 0||updateLoader">Update</a-button>
     </div>
 </template>
 
@@ -47,7 +46,7 @@ const fileUpload = async (e) => {
     } catch (error) {
         console.log(error.message);
     }
-    uploadLoader.value = false
+    uploadLoader.value = false;
 }
 
 // udate banner
